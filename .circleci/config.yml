@@ -6,4 +6,6 @@ jobs:
       - image: python:3 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: python -m http.server 8000
+      - run:
+        - ip addr
+        - python -m http.server 8000
